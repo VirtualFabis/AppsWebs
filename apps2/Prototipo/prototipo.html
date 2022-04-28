@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html  { overflow-x:hidden; }>
+<head>
+	<title>Registro de expedientes medicos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		<!--
+		body {
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+		}
+		html {
+			overflow: hidden;
+		}
+		-->
+
+	</style>
+</head>
+<body> 
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="#">
+			<img src="images/logo.png"    width= "80"height="70">
+		</a>
+
+		<!-- Links -->
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Lun a Sab /8am a 9pm <br> +528446070842</a>
+			</li>
+		</ul>
+	</nav>
+
+	
+	<div class="row" >
+		<div class="col-sm-6  " style="background: #ab1414"  ></div> 
+
+		<div class="col-sm-6 " style="color: #FF0000"  style="background: #A2FF00" align="center">Ingrese los datos del paciente</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-6" ><img src="images/auto.png"   width= "680"height="540"></div>
+		<div class="col-sm-3"   >  
+			<form action="/action_page.php">
+				<div class="form-group">
+					<br>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option>Doctor encargado</option>
+						<option>Dr Fabian Ibarra</option>
+						<option>Dr Sebatian Davila</option>
+						<option>Dr Angel Hernandez</option>
+						<option>Dr Victor Medellin</option>
+						
+					</select>
+
+
+
+				</div>
+				<form action="/action_page.php">
+					<div class="form-group">
+
+						<select class="form-control" id="sel1" name="sellist1">
+							<option>Estado</option>
+							<option>Normal</option>
+							<option>Critico</option>
+							<option>Muy critico</option>
+							<option>Muerto</option>
+						</select>
+					</form>
+
+
+				</div>
+
+				<form action="/action_page.php">
+					<div class="form-group" >
+						<br>
+						<select class="form-control" id="sel1" name="sellist1" style="width: 660px">
+							<option>Ultimo dia de una revicion</option>
+							<option>Hace unos dias</option>
+							<option>Hace varias semanas</option>
+							<option>Hace varios meses</option>
+						</select> 
+					</div>
+						<br>
+						<h6>Datos del Paciente</h6>
+
+						<form action="/action_page.php">
+							<div class="form-group"    >
+								<br>
+								<select class="form-control" id="sel1" name="sellist1" >
+									<option>Selecciona la edad</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+									<option>26</option>
+									<option>27</option>
+									<option>28</option>
+								</select> </div>
+
+								<div class="form-group">
+
+									<input type="email" class="form-control" id="email" placeholder="Ingresa tu direcion" name="email">
+								</div>
+
+								<div class="form-group">
+
+									<input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email">
+								</div>
+								
+								<div class="form-group form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" name="remember" > El paciente tiene que estar de acuerdo con los terminos y condicones
+									</label>
+								</div>
+								
+
+							</div>
+
+
+							<div class="col-sm-3">
+								<form action="/action_page.php">
+									<div class="form-group" >
+										<br>
+										<select class="form-control" id="sel1" name="sellist1">
+											<option>Gravedad</option>
+											<option>verde</option>
+											<option>azul</option>
+											<option>amarillo</option>
+											<option>rojo</option>
+										</select>
+										<form action="/action_page.php">
+											<div class="form-group">
+												<br>
+												<select class="form-control" id="sel1" name="sellist1">
+													<option>Folio del enfermera</option>
+													<option>3543-8</option>
+													<option>5424-4</option>
+													<option>5758-3</option>
+													<option>5252-7</option>
+													<option>5782-2</option>
+													<option>8647-6</option>
+												</select>
+											</form>
+										</div>
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="form-check-inline" >
+											<label class="form-check-label" for="radio1">
+												<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Masculino
+											</label>
+										</div>
+										<div class="form-check-inline"  > 
+											<label class="form-check-label" for="radio2">
+												<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" align="right">Femenino
+											</label>
+										</div>
+										
+										<div class="form-group">
+												<br>
+											<input type="email" class="form-control" id="email" placeholder="Escribe tu numbre completo" name="email">
+										</div>
+
+										<div class="form-group">
+												
+										<input type="email" class="form-control" id="email" placeholder="Ingresa tu numero" name="email">
+									</div>
+								
+									<button type="button" class="btn btn-success btn-block"><h6>Registar los datos del paciente</h6></button>
+								</div>
+
+
+
+							</body>
+							</html>
